@@ -1,0 +1,20 @@
+{
+  "name": "carrito",
+  "version": "1.0.0",
+  "description": "Website Carrito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start-sv": "http-server -c-1"
+  },
+  "author": "Joaquin Diaz Salin",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemo": "^1.0.0",
+    "nodemon": "^2.0.12",
+    "http-server": "^14.0.0"
+  }
+}
